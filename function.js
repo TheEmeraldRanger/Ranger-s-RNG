@@ -788,7 +788,7 @@ function nameMaterial(){
             M = "Diamond";
             return M;
         case 29:
-            M = "Soul";
+            M = "Soulstone";
             return M;
         case 30:
             M = "Emerald";
