@@ -983,7 +983,9 @@ function nameReason() {
             RE = "RREEEEEEEEEEEEEEEE";
             return RE;
         case 4:
-            RE = "for no apparent reason";
+            RE = "no apparent reason";
             return RE;
+        case 5:
+            RE = ""
     }
 }
