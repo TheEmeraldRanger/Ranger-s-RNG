@@ -73,7 +73,83 @@ event.onclick = function(){
     switch(randnum){
         case 1:
             result.textContent = "//BREAKING NEWS// This country has been invaded by " + nameFactionAdj() + " " + nameFaction() + " of " + namePlace() + ". The reason for invasion was " + nameReason();
-            break
+            break;
+        case 2:
+            result.textContent = "There's a concert being held at a nearby city. Would your team like to go?";
+            break;
+        case 3:
+            result.textContent = "//BREAKING NEWS// The country's " + nameImportantPerson() + " has died. Currently, people are debating over a successor."
+            break;
+        case 4:
+            result.textContent = "A battle-royale-style tournament is being hosted at the town/city you're currently at. The rewards are promising, so would you like to attend."
+            break;
+        case 5:
+            result.textContent = "A crime has been reported in your location. Would you like to assist the local guard in this matter?"
+            break;
+        case 6:
+            result.textContent = "A bounty has been set on one of your teammates."
+            break;
+        case 7:
+            result.textContent = "A nearby town/city has just been attacked by raiders."
+            break;
+        case 8:
+            result.textContent = "A teammate has just been pickpocketed and lost a chunk of their funds."
+            break;
+        case 9:
+            result.textContent = "As your team wandered, you've just came across a meme caravan selling goods. Would you like to check it out?"
+            break;
+        case 10:
+            result.textContent = "Your city is starting to be sieged."
+            break;
+        case 11:
+            result.textContent = "You've just found a lost wallet, what do you do?"
+            break;
+        case 12:
+            result.textContent = "The city's " + nameImportantPerson() + " has just been kidnapped!"
+            break;
+        case 13:
+            result.textContent = "Your team has just been accused of a crime and is now surrounded by the town guard."
+            break;
+        case 14:
+            result.textContent = "Nothing happened today."
+            break;
+            
+    }
+}
+
+scenario.onclick = function(){
+    var rando = Math.floor(Math.random() * 10)+1
+    switch(rando){
+        case 1:
+            result.textContent = "Your team has spotted smoke in the horizon.";
+            break;
+        case 2:
+            result.textContent = "Your team has just been ambushed while travelling.";
+            break;
+        case 3:
+            result.textContent = "While your team is traveling, you have come across a caravan being robbed.";
+            break;
+        case 4:
+            result.textContent = "Your team spotted several travellers in distress while traveling.";
+            break;
+        case 5:
+            result.textContent = "Your team spotted a mysterious nearby cave while travelling.";
+            break;
+        case 6:
+            result.textContent = "Nothing happened."
+            break;
+        case 7:
+            result.textContent = "Your team has been ambushed by wild animals."
+            break;
+        case 8:
+            result.textContent = "Your team has been ambushed by bandits."
+            break;
+        case 9:
+            result.textContent = "The sounds of sword-edges meeting and shouts of fighting can be heard nearby."
+            break;
+        case 10:
+            result.textContent = "Your has just been ambushed by rogues."
+            break;
     }
 }
 
@@ -987,5 +1063,27 @@ function nameReason() {
             return RE;
         case 5:
             RE = ""
+    }
+}
+
+function nameImportantPerson() {
+    var random = Math.floor(Math.random() * 5)+1
+    var P = 0
+    switch(random){
+        case 1:
+            P = "king";
+            return P;
+        case 2:
+            P = "prince";
+            return P;
+        case 3:
+            P = "president";
+            return P;
+        case 4:
+            P = "prime minister";
+            return P;
+        case 5:
+            P = "random famous person that's kinda well known."
+            return P;
     }
 }
