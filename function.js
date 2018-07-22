@@ -154,7 +154,7 @@ scenario.onclick = function(){
 }
 
 function findAbj() {
-    var random = Math.floor(Math.random() * 20)+1
+    var random = Math.floor(Math.random() * 24)+1
     var abjW = 0;
     switch(random){
         case 1:
@@ -233,7 +233,7 @@ function findAbj() {
 }
 
 function nameFaction(){
-    var random = Math.floor(Math.random() * 20)+1
+    var random = Math.floor(Math.random() * 24)+1
     switch (random){
         case 1:
             F = "Union";
