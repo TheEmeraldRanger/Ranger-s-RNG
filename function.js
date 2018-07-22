@@ -68,6 +68,15 @@ shop.onclick = function() {
     result.textContent = "The shop currently has the following in stock: " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + "."
 }
 
+event.onclick = function(){
+    var randnum = Math.floor(Math.random() * 40)+1
+    switch(randnum){
+        case 1:
+            result.textContent = "//BREAKING NEWS// This country has been invaded by " + nameFactionAdj() + " " + nameFaction() + " of " + namePlace() + ". The reason for invasion was " + nameReason();
+            break
+    }
+}
+
 function findAbj() {
     var random = Math.floor(Math.random() * 20)+1
     var abjW = 0;
@@ -226,7 +235,7 @@ function nameFaction(){
 }
 
 function nameFactionAdj(){
-    var random = Math.floor(Math.random() * 19)+1
+    var random = Math.floor(Math.random() * 34)+1
     switch (random){
         case 1:
             R = "Human";
@@ -320,6 +329,15 @@ function nameFactionAdj(){
              return R;
         case 31:
             R = "People's";
+            return R;
+        case 32:
+            R = "Loli's";
+            return R;
+        case 33:
+            R = "Traps'";
+            return R;
+        case 34:
+            R = "Patriotic";
             return R;
     }
 }
@@ -948,5 +966,24 @@ function findWAbj() {
     case 48:
         abjW = "Blacksmith's";
         return abjW;
+    }
+}
+
+function nameReason() {
+    var random = Math.floor(Math.random() * 20)+1
+    var RE = 0
+    switch(random){
+        case 1:
+            RE = "violation of an international treaty";
+            return RE;
+        case 2:
+            RE = "totally not oil";
+            return RE;
+        case 3:
+            RE = "RREEEEEEEEEEEEEEEE";
+            return RE;
+        case 4:
+            RE = "for no apparent reason";
+            return RE;
     }
 }
