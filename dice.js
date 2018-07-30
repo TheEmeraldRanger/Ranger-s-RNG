@@ -10,7 +10,7 @@ yn.onclick = function() {
  switch(selectrando){
    case 1:
      rtc = "yes";
-     brea = "
+     break
    case 2:
      rtc = "no";
      break
