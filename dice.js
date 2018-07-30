@@ -22,7 +22,7 @@ d6.onclick = function() {
   var randnum2 = Math.floor(Math.random()*4)+1
   switch(selectrando){
     case 1:
-      switch(randnum2)
+      switch(randnum2){
         case 1:
           rtc = "Take a wildddddddddddd guess......... [You rolled a ONE, Good luck (^_-)]"
           break
@@ -30,6 +30,27 @@ d6.onclick = function() {
           rtc = "R.I.P. That_Guy [Rolled a ONE]"
           break
         case 3:
-          rtc = ""
+          rtc = "Congrats, you failed [Rolled a ONE]"
+          break
+        case 4:
+         rtc = "You rolled a ONE."
+         break
+      }
+      break
+   case 2:
+     rtc = "You rolled a TWO."
+     break
+   case 3:
+     rtc = "You rolled a THREE."
+     break
+    case 4:
+     rtc = "You rolled a FOUR."
+     break
+    case 5:
+     rtc = "You rolled a FIVE."
+     break
+    case 6:
+     rtc = "You rolled a SIX! Lucky!"
+     break
   }
 }
