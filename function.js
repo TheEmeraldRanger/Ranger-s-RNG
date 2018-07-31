@@ -915,10 +915,60 @@ function chooseEquip(){
         case 4:
             //Armor
             switch(random){
-            }
-        case 5:
-            //Accessories & commodities
-            switch(random){
+                case 1:
+                    i = "chainmail"
+                    return i;
+                case 2:
+                    i = "breastplate"
+                    return i;
+                case 3:
+                    i = "tunic";
+                    return i;
+                case 4:
+                    i = "cloak";
+                    return i;
+                case 5:
+                    i = "jacket"
+                    return i;
+                case 6:
+                    i = "pants";
+                    return i;
+                case 7:
+                    i = "chainmail leggings";
+                    return i;
+                case 8:
+                    i = "heavily armored leggings";
+                    return i;
+                case 9:
+                    i = "hood";
+                    return i;
+                case 10:
+                    i = "hat";
+                    return i;
+                case 11:
+                    i = "helm";
+                    return i;
+                case 12:
+                    i = "helmet";
+                    return i;
+                case 13:
+                    i = "vest";
+                    return i;
+                case 14:
+                    i = "arm paddings";
+                    return i;
+                case 15:
+                    i = "leg paddings";
+                    return i;
+                case 16:
+                    i = "pads";
+                    return i;
+                case 17:
+                    i = "shorts";
+                    return i;
+                case 18:
+                    i = "shirt";
+                    return i;
             }
     }
 }
