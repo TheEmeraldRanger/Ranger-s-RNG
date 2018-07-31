@@ -5,7 +5,6 @@ var event = document.getElementById("eventGen")
 var shop = document.getElementById("shopGen")
 
 var result = document.getElementById("result")
-var tc = result.textContent
 
 
 story.onclick = function() {
@@ -273,10 +272,10 @@ function nameFaction(){
             F = "Theatre";
             return F;
         case 13:
-            F = "Squad";
+            F = "Bois";
             return F;
         case 14:
-            F = "Divison";
+            F = "City-State";
             return F;
         case 15:
             F = "Army";
