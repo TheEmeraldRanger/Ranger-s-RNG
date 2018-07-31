@@ -58,10 +58,10 @@ d6.onclick = function() {
 
 d20.onclick = function(){
  var randonumz = Math.floor(Math.random()*20)+1
- rtc = randonumz
+ rtc = "You rolled a " + randonumz
 }
 d100.onclick = function(){
  var randonumz = Math.floor(Math.random()*100)+1
- rtc = randonumz
+ rtc = "You rolled a " + randonumz
 }
 
