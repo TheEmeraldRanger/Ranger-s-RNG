@@ -54,3 +54,12 @@ d6.onclick = function() {
      break
   }
 }
+
+d20.onclick = function(){
+ var randonumz = Math.floor(Math.random()*20)+1
+ rtc = randonumz
+}
+d100.onclick = function(){
+ var randonumz = Math.floor(Math.random()*100)+1
+ rtc = randonumz
+}
