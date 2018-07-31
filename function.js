@@ -5,6 +5,7 @@ var event = document.getElementById("eventGen")
 var shop = document.getElementById("shopGen")
 
 var result = document.getElementById("result")
+var tc = result.textContent
 
 
 story.onclick = function() {
@@ -767,71 +768,159 @@ function findSkillz() {
 }
 
 function chooseEquip(){
-    var random = Math.floor(Math.random() * 21)+1
-    switch(random){
+    var random = Math.floor(Math.random() * 18)+1
+    var ritemclass = Math.floor(Math.random()*4)+1
+    switch(ritemclass){
         case 1:
-            E = "Sword";
-            return E;
+            //Melee Weapons
+            switch(random){
+                case 1:
+                    i = "Basic Sword"
+                    return i
+                case 2:
+                    i = "Spear"
+                    return i
+                case 3:
+                    i = "Knife"
+                    return i
+                case 4:
+                    i = "Polearm"
+                    return i
+                case 5:
+                    i = "Lance"
+                    return i
+                case 6:
+                    i = "Jousting Lance"
+                    return i
+                case 7:
+                    i = "Pike"
+                    return i
+                case 8:
+                    i = "Shortsword"
+                    return i
+                case 9:
+                    i = "Longsword"
+                    return i
+                case 10:
+                    i = "Axe"
+                    return i
+                case 11:
+                    i = "Battleaxe"
+                    return i
+                case 12:
+                    i = "Dagger"
+                    return i
+                case 13:
+                    i = "Saber"
+                    return i
+                case 14:
+                    i = "Cavalry Saber"
+                    return i
+                case 15:
+                    i = "Hammer"
+                    return i
+                case 16:
+                    i = "Battle Hammer"
+                    return i 
+                case 17:
+                    i = "Broadsword"
+                    return i
+                case 18:
+                    i = "Gladius"
+                    return i
+            }
         case 2:
-            E = "Spear";
-            return E;
+            //Ranged Weapons
+            switch(random){
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    i = "pistol"
+                    return i
+                case 5:
+                    i = "prototype pistol"
+                    return i
+                case 6:
+                    i = "repeating pistol"
+                    return i
+                case 7:
+                case 8:
+                case 9:
+                    i = "rifle"
+                    return i
+                case 10:
+                    i = "lever-action"
+                    return i
+                case 11:
+                    i = "bolt-action"
+                    return i
+                case 12:
+                case 13:
+                case 14:
+                    i = "blunderbuss"
+                    return i
+                case 15:
+                    i = "double-barrel"
+                    return i
+                case 16:
+                case 17:
+                case 18:
+                    i = "bow"
+                    return i
+            }
         case 3:
-            E = "Shield";
-            return E;
+            //Magic Weapons
+            switch(random){
+                case 1:
+                case 2:
+                case 3:
+                    i = "orb";
+                    return i;
+                case 4:
+                case 5:
+                case 6:
+                    i = "wand";
+                    return i;
+                case 7:
+                case 8:
+                    i = "staff";
+                    return i;
+                case 9:
+                case 10:
+                    i = "book";
+                    return i;
+                case 11:
+                case 12:
+                    i = "spellbook";
+                    return i;
+                case 13:
+                    i = "enchanting orb"
+                    return i;
+                case 14:
+                    i = "mana orb";
+                    return i;
+                case 15:
+                    i = "healing staff";
+                    return i;
+                case 16:
+                    i = "orb of knowledge";
+                    return i;
+                case 17:
+                    i = "enhanced wand";
+                    return i;
+                case 18:
+                    i = "charming staff";
+                    return i;
+            }
         case 4:
-            E = "Pistol";
-            return E;
+            //Armor
+            switch(random){
+            }
         case 5:
-            E = "Rifle";
-            return E;
-        case 6:
-            E = "Blunderbuss";
-            return E;
-        case 7:
-            E = "Staff";
-            return E;
-        case 8:
-            E = "Book";
-            return E;
-        case 9:
-            E = "Wand";
-            return E;
-        case 10:
-            E = "Orb";
-            return E;
-        case 11:
-            E = "Helmet";
-            return E;
-        case 12:
-            E = "Vest";
-            return E;
-        case 13:
-            E = "Breastplate";
-            return E;
-        case 14:
-            E = "Chainmail";
-            return E;
-        case 15:
-            E = "Torch";
-            return E;
-        case 16:
-            E = "Hammer";
-            return E;
-        case 17:
-            E = "Leggings";
-            return E;
-        case 18:
-            E = "Pants";
-            return E;
-        case 19:
-            E = "Uniform";
-            return E;
-        case 20:
-            E = "Badge";
-            return E;
-        case 21:
-            E = "Charm";
-            return E;
+            //Accessories & commodities
+            switch(random){
+            }
     }
 }
 function nameMaterial(){
@@ -1062,7 +1151,44 @@ function nameReason() {
             RE = "no apparent reason";
             return RE;
         case 5:
-            RE = ""
+            RE = "to obtain land";
+            return RE;
+        case 6:
+            RE = "conquest";
+            return RE;
+        case 7:
+            RE = "a reason that people forgot already";
+            return RE;
+        case 8:
+            RE = "military buildup that places an ally/self in possible danger";
+            return RE;
+        case 9:
+            RE = "terrorism";
+            return RE;
+        case 10:
+            RE = "supporting terrorism";
+            return RE;
+        case 11:
+            RE = "supporting the Dark Arts";
+            return RE;
+        case 12:
+            RE = "being dangerous";
+            return RE;
+        case 13:
+            RE = "having/researching/producing dangerous weapons";
+            return RE;
+        case 14:
+            RE = "a horrible reason";
+            return RE;
+        case 15:
+            RE = "resources";
+            return RE;
+        case 16:
+            RE = "a dishonest reason";
+            return RE;
+        case 17:
+            RE = "treason";
+            return RE;
     }
 }
 
