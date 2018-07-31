@@ -1,7 +1,7 @@
-var yn = document.getElementbyId("yn")
-var d6 = document.getElementbyId("d6")
-var d20 = document.getElementbyId("d20")
-var d100 = document.getElementbyId("d100")
+var yn = document.getElementById("yn")
+var d6 = document.getElementById("d6")
+var d20 = document.getElementById("d20")
+var d100 = document.getElementById("d100")
 
 var rtc =  result.textcontent
 
