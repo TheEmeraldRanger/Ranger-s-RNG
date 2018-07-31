@@ -4,16 +4,15 @@ var d20 = document.getElementById("d20")
 var d100 = document.getElementById("d100")
 
 var result = document.getElementById("result")
-var rtc =  result.textContent
 
 yn.onclick = function() {
  var selectrando = Math.floor(Math.random()*2)+1 
  switch(selectrando){
    case 1:
-     rtc = "yes";
+     result.textContent = "yes";
      break
    case 2:
-     rtc = "no";
+     result.textContent = "no";
      break
  }
 }
@@ -25,43 +24,43 @@ d6.onclick = function() {
     case 1:
       switch(randnum2){
         case 1:
-          rtc = "Take a wildddddddddddd guess......... [You rolled a ONE, Good luck (^_-)]"
+          result.textContent = "Take a wildddddddddddd guess......... [You rolled a ONE, Good luck (^_-)]"
           break
         case 2:
-          rtc = "R.I.P. That_Guy [Rolled a ONE]"
+          result.textContent = "R.I.P. That_Guy [Rolled a ONE]"
           break
         case 3:
-          rtc = "Congrats, you failed [Rolled a ONE]"
+          result.textContent = "Congrats, you failed [Rolled a ONE]"
           break
         case 4:
-         rtc = "You rolled a ONE."
+         result.textContent = "You rolled a ONE."
          break
       }
       break
    case 2:
-     rtc = "You rolled a TWO."
+     result.textContent = "You rolled a TWO."
      break
    case 3:
-     rtc = "You rolled a THREE."
+     result.textContent = "You rolled a THREE."
      break
     case 4:
-     rtc = "You rolled a FOUR."
+     result.textContent = "You rolled a FOUR."
      break
     case 5:
-     rtc = "You rolled a FIVE."
+     result.textContent = "You rolled a FIVE."
      break
     case 6:
-     rtc = "You rolled a SIX! Lucky!"
+     result.textContent = "You rolled a SIX! Lucky!"
      break
   }
 }
 
 d20.onclick = function(){
  var randonumz = Math.floor(Math.random()*20)+1
- rtc = "You rolled a " + randonumz
+ result.textContent = "You rolled a " + randonumz
 }
 d100.onclick = function(){
  var randonumz = Math.floor(Math.random()*100)+1
- rtc = "You rolled a " + randonumz
+ result.textContent = "You rolled a " + randonumz
 }
 
