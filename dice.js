@@ -4,7 +4,7 @@ var d20 = document.getElementById("d20")
 var d100 = document.getElementById("d100")
 
 var result = document.getElementById("result")
-var rtc =  result.textcontent
+var rtc =  result.textContent
 
 yn.onclick = function() {
  var selectrando = Math.floor(Math.random()*2)+1 
