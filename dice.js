@@ -64,3 +64,4 @@ d100.onclick = function(){
  var randonumz = Math.floor(Math.random()*100)+1
  rtc = randonumz
 }
+
