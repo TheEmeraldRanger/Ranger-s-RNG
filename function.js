@@ -500,7 +500,7 @@ function namePlace() {
 }
 
 function findSkillz() {
-    var random = Math.floor(Math.random() * 86)+1
+    var random = Math.floor(Math.random() * 90)+1
     switch(random){
         case 1:
             S = "nothing apparently"
@@ -761,7 +761,16 @@ function findSkillz() {
             S = "blowing stuff up"
             return S
         case 87:
-            S = "surviving a riot";
+            S = "surviving riots";
+            return S;
+        case 88:
+            S = "deep fried memes"
+            return S;
+        case 89:
+            S = "being a meme historian";
+            return S;
+        case 90:
+            S = "being useless";
             return S;
         }  
 }
