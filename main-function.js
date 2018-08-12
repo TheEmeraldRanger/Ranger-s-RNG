@@ -3,7 +3,7 @@ var backstory = document.getElementById("backstoryGen")
 var scenario = document.getElementById("scenarioGen")
 var event = document.getElementById("eventGen")
 
-var result = document.getElementById("result")
+var result = document.getElementById("storyresult")
 
 
 story.onclick = function() {
