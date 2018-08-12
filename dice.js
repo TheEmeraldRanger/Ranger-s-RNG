@@ -3,16 +3,16 @@ var d6 = document.getElementById("d6")
 var d20 = document.getElementById("d20")
 var d100 = document.getElementById("d100")
 
-var result = document.getElementById("diceresult")
+var dresult = document.getElementById("diceresult")
 
 yn.onclick = function() {
  var selectrando = Math.floor(Math.random()*2)+1 
  switch(selectrando){
    case 1:
-     result.textContent = "yes";
+     dresult.textContent = "yes";
      break
    case 2:
-     result.textContent = "no";
+     dresult.textContent = "no";
      break
  }
 }
@@ -24,43 +24,43 @@ d6.onclick = function() {
     case 1:
       switch(randnum2){
         case 1:
-          result.textContent = "Take a wildddddddddddd guess......... [You rolled a ONE, Good luck (^_-)]"
+          dresult.textContent = "Take a wildddddddddddd guess......... [You rolled a ONE, Good luck (^_-)]"
           break
         case 2:
-          result.textContent = "R.I.P. That_Guy [Rolled a ONE]"
+          dresult.textContent = "R.I.P. That_Guy [Rolled a ONE]"
           break
         case 3:
-          result.textContent = "Congrats, you failed [Rolled a ONE]"
+          dresult.textContent = "Congrats, you failed [Rolled a ONE]"
           break
         case 4:
-         result.textContent = "You rolled a ONE."
+         dresult.textContent = "You rolled a ONE."
          break
       }
       break
    case 2:
-     result.textContent = "You rolled a TWO."
+     dresult.textContent = "You rolled a TWO."
      break
    case 3:
-     result.textContent = "You rolled a THREE."
+     dresult.textContent = "You rolled a THREE."
      break
     case 4:
-     result.textContent = "You rolled a FOUR."
+     dresult.textContent = "You rolled a FOUR."
      break
     case 5:
-     result.textContent = "You rolled a FIVE."
+     dresult.textContent = "You rolled a FIVE."
      break
     case 6:
-     result.textContent = "You rolled a SIX! Lucky!"
+     dresult.textContent = "You rolled a SIX! Lucky!"
      break
   }
 }
 
 d20.onclick = function(){
  var randonumz = Math.floor(Math.random()*20)+1
- result.textContent = "You rolled a " + randonumz
+ dresult.textContent = "You rolled a " + randonumz
 }
 d100.onclick = function(){
  var randonumz = Math.floor(Math.random()*100)+1
- result.textContent = "You rolled a " + randonumz
+ dresult.textContent = "You rolled a " + randonumz
 }
 
