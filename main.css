@@ -68,7 +68,7 @@ body {
     z-index: 2;
 }
 
-#result {
+.result {
     height: 500px;
     margin: 10px;
     background-color: black;
