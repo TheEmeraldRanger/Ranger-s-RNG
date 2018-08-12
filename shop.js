@@ -7,12 +7,15 @@ shop.onclick = function() {
 }
 
 function chooseEquip(){
-    var random = Math.floor(Math.random() * 18)+1
+    var rmelee = Math.floor(Math.random() * 18)+1
+    var rranged = Math.floor(Math.random() * 18)+1
+    var rmagic = Math.floor(Math.random() * 18)+1
+    var rarmor = Math.floor(Math.random() * 18)+1
     var ritemclass = Math.floor(Math.random()*4)+1
     switch(ritemclass){
         case 1:
             //Melee Weapons
-            switch(random){
+            switch(rmelee){
                 case 1:
                     i = "Basic Sword"
                     return i
@@ -70,7 +73,7 @@ function chooseEquip(){
             }
         case 2:
             //Ranged Weapons
-            switch(random){
+            switch(rranged){
                 case 1:
                 case 2:
                 case 3:
@@ -110,7 +113,7 @@ function chooseEquip(){
             }
         case 3:
             //Magic Weapons
-            switch(random){
+            switch(rmagic){
                 case 1:
                 case 2:
                 case 3:
@@ -154,7 +157,7 @@ function chooseEquip(){
             }
         case 4:
             //Armor
-            switch(random){
+            switch(rarmor){
                 case 1:
                     i = "chainmail"
                     return i;
