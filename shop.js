@@ -1,9 +1,9 @@
 var shop = document.getElementById("shopGen")
 
-var result = document.getElementById("shopresult")
+var sresult = document.getElementById("shopresult")
 
 shop.onclick = function() {
-    result.textContent = "The shop currently has the following in stock: " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + "."
+    sresult.textContent = "The shop currently has the following in stock: " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + "."
 }
 
 function chooseEquip(){
