@@ -1,6 +1,6 @@
 var shop = document.getElementById("shopGen")
 
-var result = document.getElementById("result")
+var result = document.getElementById("shopresult")
 
 shop.onclick = function() {
     result.textContent = "The shop currently has the following in stock: " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + "."
