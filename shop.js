@@ -452,7 +452,7 @@ function findFood() {
             Fud = "Chip(s)";
             return Fud;
         case 7:
-            Fud = "Melon(s);
+            Fud = "Melon(s)";
             return Fud;
         case 8:
             Fud = "Apple(s)";
