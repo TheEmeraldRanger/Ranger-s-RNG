@@ -3,7 +3,7 @@ var d6 = document.getElementById("d6")
 var d20 = document.getElementById("d20")
 var d100 = document.getElementById("d100")
 
-var result = document.getElementById("result")
+var result = document.getElementById("diceresult")
 
 yn.onclick = function() {
  var selectrando = Math.floor(Math.random()*2)+1 
