@@ -1,9 +1,13 @@
 var shop = document.getElementById("shopGen")
+var genshop = document.getElementById("genshopGen")
 
 var sresult = document.getElementById("shopresult")
 
-shop.onclick = function() {
+randomshop.onclick = function() {
     sresult.textContent = "The shop currently has the following in stock: " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + "."
+}
+genshop.onclick = function(){
+    sresult.textContent = ""
 }
 
 function chooseEquip(){
@@ -425,3 +429,41 @@ function findWAbj() {
         return abjW;
     }
 }
+
+function findFood() {
+    ra = Math.floor(Math.random() * 10)+1
+    switch(ra){
+        case 1:
+            Fud = "Bread";
+            return Fud;
+        case 2:
+            Fud = "Sandwich(es)";
+            return Fud;
+        case 3:
+            Fud = "Wheat";
+            return Fud;
+        case 4:
+            Fud = "Meat";
+            return Fud;
+        case 5:
+            Fud = "Beef Jerky";
+            return Fud;
+        case 6:
+            Fud = "Chip(s)";
+            return Fud;
+        case 7:
+            Fud = "Melon(s);
+            return Fud;
+        case 8:
+            Fud = "Apple(s)";
+            return Fud;
+        case 9:
+            Fud = "Grape(s)";
+            return Fud;
+        case 10:
+            Fud = "Orange(s)";
+            return Fud;
+        case 11:
+            Fud = "";
+            return Fud;
+    }
