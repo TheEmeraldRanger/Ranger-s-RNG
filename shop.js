@@ -4,10 +4,33 @@ var genshop = document.getElementById("genshopGen")
 var sresult = document.getElementById("shopresult")
 
 randomshop.onclick = function() {
-    sresult.textContent = "The shop currently has the following in stock: " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + ", " + findWAbj() + " " + nameMaterial() + " " + chooseEquip() + "."
+    sresult.textContent = "The shop currently has the following in stock: " + randoEquip() + ", " + randoSupply() + ", " + randoItem() + ", " + randoItem() + "."
 }
 genshop.onclick = function(){
     sresult.textContent = ""
+}
+
+function randoEquip(){
+    r = findWAdj() + nameMaterial() + chooseEquip()
+    return r
+}
+
+function randoSupply(){
+    randonum = Math.floor(Math.random()*100)+1
+    r = randonum + findfood()
+    return r
+}
+
+function randoItem(){
+    random = Math.floor(Math.random()*2)+1
+    switch(random){
+        case 1:
+            c = randoEquip();
+            return c;
+        case 2:
+            c = randoSupply();
+            return c;
+    }
 }
 
 function chooseEquip(){
@@ -21,58 +44,58 @@ function chooseEquip(){
             //Melee Weapons
             switch(rmelee){
                 case 1:
-                    i = "Basic Sword"
+                    i = " Basic Sword "
                     return i
                 case 2:
-                    i = "Spear"
+                    i = " Spear "
                     return i
                 case 3:
-                    i = "Knife"
+                    i = " Knife "
                     return i
                 case 4:
-                    i = "Polearm"
+                    i = " Polearm "
                     return i
                 case 5:
-                    i = "Lance"
+                    i = " Lance "
                     return i
                 case 6:
-                    i = "Jousting Lance"
+                    i = " Jousting Lance "
                     return i
                 case 7:
-                    i = "Pike"
+                    i = " Pike "
                     return i
                 case 8:
-                    i = "Shortsword"
+                    i = " Shortsword "
                     return i
                 case 9:
-                    i = "Longsword"
+                    i = " Longsword "
                     return i
                 case 10:
-                    i = "Axe"
+                    i = " Axe "
                     return i
                 case 11:
-                    i = "Battleaxe"
+                    i = " Battleaxe "
                     return i
                 case 12:
-                    i = "Dagger"
+                    i = " Dagger "
                     return i
                 case 13:
-                    i = "Saber"
+                    i = " Saber "
                     return i
                 case 14:
-                    i = "Cavalry Saber"
+                    i = " Cavalry Saber "
                     return i
                 case 15:
-                    i = "Hammer"
+                    i = " Hammer "
                     return i
                 case 16:
-                    i = "Battle Hammer"
+                    i = " Battle Hammer "
                     return i 
                 case 17:
-                    i = "Broadsword"
+                    i = " Broadsword "
                     return i
                 case 18:
-                    i = "Gladius"
+                    i = " Gladius "
                     return i
             }
         case 2:
@@ -82,37 +105,37 @@ function chooseEquip(){
                 case 2:
                 case 3:
                 case 4:
-                    i = "pistol"
+                    i = " pistol "
                     return i
                 case 5:
-                    i = "prototype pistol"
+                    i = " prototype pistol "
                     return i
                 case 6:
-                    i = "repeating pistol"
+                    i = " repeating pistol "
                     return i
                 case 7:
                 case 8:
                 case 9:
-                    i = "rifle"
+                    i = " rifle "
                     return i
                 case 10:
-                    i = "lever-action"
+                    i = " lever-action "
                     return i
                 case 11:
-                    i = "bolt-action"
+                    i = " bolt-action "
                     return i
                 case 12:
                 case 13:
                 case 14:
-                    i = "blunderbuss"
+                    i = " blunderbuss "
                     return i
                 case 15:
-                    i = "double-barrel"
+                    i = " double-barrel "
                     return i
                 case 16:
                 case 17:
                 case 18:
-                    i = "bow"
+                    i = " bow "
                     return i
             }
         case 3:
@@ -121,100 +144,100 @@ function chooseEquip(){
                 case 1:
                 case 2:
                 case 3:
-                    i = "orb";
+                    i = " orb ";
                     return i;
                 case 4:
                 case 5:
                 case 6:
-                    i = "wand";
+                    i = " wand ";
                     return i;
                 case 7:
                 case 8:
-                    i = "staff";
+                    i = " staff ";
                     return i;
                 case 9:
                 case 10:
-                    i = "book";
+                    i = " book ";
                     return i;
                 case 11:
                 case 12:
-                    i = "spellbook";
+                    i = " spellbook ";
                     return i;
                 case 13:
-                    i = "enchanting orb"
+                    i = " enchanting orb "
                     return i;
                 case 14:
-                    i = "mana orb";
+                    i = " mana orb ";
                     return i;
                 case 15:
-                    i = "healing staff";
+                    i = " healing staff ";
                     return i;
                 case 16:
-                    i = "orb of knowledge";
+                    i = " orb of knowledge ";
                     return i;
                 case 17:
-                    i = "enhanced wand";
+                    i = " enhanced wand ";
                     return i;
                 case 18:
-                    i = "charming staff";
+                    i = " charming staff ";
                     return i;
             }
         case 4:
             //Armor
             switch(rarmor){
                 case 1:
-                    i = "chainmail"
+                    i = " chainmail "
                     return i;
                 case 2:
-                    i = "breastplate"
+                    i = " breastplate "
                     return i;
                 case 3:
-                    i = "tunic";
+                    i = " tunic ";
                     return i;
                 case 4:
-                    i = "cloak";
+                    i = " cloak ";
                     return i;
                 case 5:
-                    i = "jacket"
+                    i = " jacket "
                     return i;
                 case 6:
-                    i = "pants";
+                    i = " pants ";
                     return i;
                 case 7:
-                    i = "chainmail leggings";
+                    i = " chainmail leggings ";
                     return i;
                 case 8:
-                    i = "heavily armored leggings";
+                    i = " heavily armored leggings ";
                     return i;
                 case 9:
-                    i = "hood";
+                    i = " hood ";
                     return i;
                 case 10:
-                    i = "hat";
+                    i = " hat ";
                     return i;
                 case 11:
-                    i = "helm";
+                    i = " helm ";
                     return i;
                 case 12:
-                    i = "helmet";
+                    i = " helmet ";
                     return i;
                 case 13:
-                    i = "vest";
+                    i = " vest ";
                     return i;
                 case 14:
-                    i = "arm paddings";
+                    i = " arm paddings ";
                     return i;
                 case 15:
-                    i = "leg paddings";
+                    i = " leg paddings ";
                     return i;
                 case 16:
-                    i = "pads";
+                    i = " pads ";
                     return i;
                 case 17:
-                    i = "shorts";
+                    i = " shorts ";
                     return i;
                 case 18:
-                    i = "shirt";
+                    i = " shirt ";
                     return i;
             }
     }
@@ -227,11 +250,11 @@ function nameMaterial(){
         case 3:
         case 4:
         case 5:
-            M = "Wooden";
+            M = " Wooden ";
             return M;
         case 6:
         case 7:
-            M = "Rusty";
+            M = " Rusty ";
             return M;
         case 8:
         case 9:
@@ -244,39 +267,39 @@ function nameMaterial(){
         case 16:
         case 17:
         case 18:
-            M = "Bronze";
+            M = " Bronze ";
             return M;
         case 19:
         case 20:
         case 21:
         case 22:
-            M = "Iron";
+            M = " Iron ";
             return M;
         case 23:
         case 24:
         case 25:
-            M = "Steel";
+            M = " Steel ";
             return M;
         case 26:
-            M = "Jewel";
+            M = " Jewel ";
             return M;
         case 27:
-            M = "Golden";
+            M = " Golden ";
             return M;
         case 28:
-            M = "Diamond";
+            M = " Diamond ";
             return M;
         case 29:
-            M = "Soulstone";
+            M = " Soulstone ";
             return M;
         case 30:
-            M = "Emerald";
+            M = " Emerald ";
             return M;
         case 31:
-            M = "Ruby"
+            M = " Ruby "
             return M;
         case 32:
-            M = "Sapphire"
+            M = " Sapphire "
             return M;
     }
 }
@@ -284,186 +307,195 @@ function findWAbj() {
     var random = Math.floor(Math.random()*48)+1
     switch(random){
         case 1:
-        abjW = "Merciful";
+        abjW = " Merciful ";
         return abjW;
     case 2:
-        abjW = "Bloody";
+        abjW = " Bloody ";
         return abjW;
     case 3:
-        abjW = "Factory New";
+        abjW = " Factory New ";
         return abjW;
     case 4:
-        abjW = "Annoying";
+        abjW = " Annoying ";
         return abjW;
     case 5:
-        abjW = "Merciless";
+        abjW = " Merciless ";
         return abjW;
     case 6:
-        abjW = "Evil";
+        abjW = " Evil ";
         return abjW;
     case 7:
-        abjW = "Derpy";
+        abjW = " Derpy ";
         return abjW;
     case 8:
-        abjW = "Rebellious";
+        abjW = " Rebellious ";
         return abjW;
     case 9:
-        abjW = "Tanky";
+        abjW = " Tanky ";
         return abjW;
     case 10:
-        abjW = "Magical";
+        abjW = " Magical ";
         return abjW;
     case 11:
-        abjW = "Old";
+        abjW = " Old ";
         return abjW;
     case 12:
-        abjW = "New";
+        abjW = " New ";
         return abjW;
     case 13:
-        abjW = "Explosive";
+        abjW = " Explosive ";
         return abjW;
     case 14:
-        abjW = "Military";
+        abjW = " Military ";
         return abjW;
     case 15:
-        abjW = "Poisonous";
+        abjW = " Poisonous ";
         return abjW;
     case 16:
-        abjW = "Bright";
+        abjW = " Bright ";
         return abjW;
     case 17:
-        abjW = "Dark";
+        abjW = " Dark ";
         return abjW;
     case 18:
-        abjW = "Sad";
+        abjW = " Sad ";
         return abjW;
     case 19:
-        abjW = "Happy";
+        abjW = " Happy ";
         return abjW;
     case 20:
-        abjW = "Heroic";
+        abjW = " Heroic ";
         return abjW;
     case 21:
-        abjW = "Defensive";
+        abjW = " Defensive ";
         return abjW;
     case 22:
-        abjW = "Offensive";
+        abjW = " Offensive ";
         return abjW;
     case 23:
-        abjW = "Tough"
+        abjW = " Tough ";
         return abjW;
     case 24:
-        abjW = "Talking"
+        abjW = " Talking "
         return abjW;
     case 25:
-        abjW = "Vampiric";
+        abjW = " Vampiric ";
         return abjW;
     case 26:
-        abjW = "Well Crafted";
+        abjW = " Well Crafted ";
         return abjW;
     case 27:
-        abjW = "Homemade";
+        abjW = " Homemade ";
         return abjW
     case 28:
-        abjW = "Sharp";
+        abjW = " Sharp ";
         return abjW;
     case 29:
-        abjW = "Honorable";
+        abjW = " Honorable ";
         return abjW;
     case 30:
-        abjW = "Hot"
+        abjW = " Hot "
         return abjW;
     case 31:
-        abjW = "Expensive"
+        abjW = " Expensive "
         return abjW;
     case 32:
-        abjW = "Light"
+        abjW = " Light "
         return abjW;
     case 33:
-        abjW = "Heavy";
+        abjW = " Heavy ";
         return abjW;
     case 34:
-        abjW = "Imported";
+        abjW = " Imported ";
         return abjW;
     case 35:
-        abjW = "Balanced";
+        abjW = " Balanced ";
         return abjW;
     case 36:
-        abjW = "Skillful";
+        abjW = " Skillful ";
         return abjW;
     case 37:
-        abjW = "Engineer's";
+        abjW = " Engineer's ";
         return abjW;
     case 38:
-        abjW = "Knight's";
+        abjW = " Knight's ";
         return abjW;
     case 39:
-        abjW = "Guard's";
+        abjW = " Guard's ";
         return abjW;
     case 40:
-        abjW = "Standard";
+        abjW = " Standard ";
         return abjW;
     case 41:
-        abjW = "Outlaw's";
+        abjW = " Outlaw's ";
         return abjW;
     case 42:
-        abjW = "Soldier's";
+        abjW = " Soldier's ";
         return abjW;
     case 43:
-        abjW = "Militiaman's";
+        abjW = " Militiaman's ";
         return abjW;
     case 44:
-        abjW = "Builder's";
+        abjW = " Builder's ";
         return abjW;
     case 45:
-        abjW = "Master's";
+        abjW = " Master's ";
         return abjW;
     case 46:
-        abjW = "King's";
+        abjW = " King's ";
         return abjW;
     case 47:
-        abjW = "Craftsman's";
+        abjW = " Craftsman's ";
         return abjW;
     case 48:
-        abjW = "Blacksmith's";
+        abjW = " Blacksmith's ";
         return abjW;
     }
 }
 
 function findFood() {
-    ra = Math.floor(Math.random() * 10)+1
+    ra = Math.floor(Math.random() * 14)+1
     switch(ra){
         case 1:
-            Fud = "Bread";
+            Fud = " Bread ";
             return Fud;
         case 2:
-            Fud = "Sandwich(es)";
+            Fud = " Sandwich(es) ";
             return Fud;
         case 3:
-            Fud = "Wheat";
+            Fud = " Wheat ";
             return Fud;
         case 4:
-            Fud = "Meat";
+            Fud = " Meat ";
             return Fud;
         case 5:
-            Fud = "Beef Jerky";
+            Fud = " Beef Jerky ";
             return Fud;
         case 6:
-            Fud = "Chip(s)";
+            Fud = " Chip(s) ";
             return Fud;
         case 7:
-            Fud = "Melon(s)";
+            Fud = " Melon(s) ";
             return Fud;
         case 8:
-            Fud = "Apple(s)";
+            Fud = " Apple(s) ";
             return Fud;
         case 9:
-            Fud = "Grape(s)";
+            Fud = " Grape(s) ";
             return Fud;
         case 10:
-            Fud = "Orange(s)";
+            Fud = " Orange(s) ";
             return Fud;
         case 11:
-            Fud = "";
+            Fud = " Package of Strawberries ";
+            return Fud;
+        case 12:
+            Fud = " Package of Blueberries ";
+            return Fud;
+        case 13:
+            Fud = " Bag of Chips ";
+            return Fud;
+        case 14:
+            Fud = " Handful of Berries ";
             return Fud;
     }
