@@ -35,7 +35,7 @@ function randoItem(){
 
 function chooseEquip(){
     var rmelee = Math.floor(Math.random() * 18)+1
-    var rranged = Math.floor(Math.random() * 36)+1
+    var rranged = Math.floor(Math.random() * 50)+1
     var rmagic = Math.floor(Math.random() * 18)+1
     var rarmor = Math.floor(Math.random() * 18)+1
     var ritemclass = Math.floor(Math.random()*4)+1
@@ -160,6 +160,26 @@ function chooseEquip(){
                 case 35:
                 case 36:
                     i = " Recurve Bow ";
+                    return i;
+                case 37:
+                case 38:
+                case 39:
+                case 40:
+                    i = " Crossbow ";
+                    return i;
+                case 41:
+                case 42:
+                case 43:
+                case 44:
+                    i = " Catapult ";
+                    return i;
+                case 45:
+                case 46:
+                case 47:
+                case 48:
+                case 49:
+                case 50:
+                    i = " Bow ";
                     return i;
             }
         case 3:
@@ -535,7 +555,7 @@ function findFood() {
 }
 
 function findUtility() {
-    ra = Math.floor(Math.random()*10)+1
+    ra = Math.floor(Math.random()*12)+1
     switch(ra){
         case 1:
             u = " Lockpick(s) ";
@@ -566,6 +586,12 @@ function findUtility() {
             return u;
         case 10:
             u = " Wrench ";
+            return u;
+        case 11:
+            u = " Nails ";
+            return u;
+        case 12:
+            u = " Defusal Kit ";
             return u;
     }
 }
