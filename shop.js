@@ -454,7 +454,7 @@ function findWAbj() {
 }
 
 function findFood() {
-    ra = Math.floor(Math.random() * 14)+1
+    ra = Math.floor(Math.random() * 17)+1
     switch(ra){
         case 1:
             Fud = " Bread ";
@@ -498,5 +498,50 @@ function findFood() {
         case 14:
             Fud = " Handful of Berries ";
             return Fud;
+        case 15:
+            Fud = " Rations ";
+            return Fud;
+        case 16:
+            Fud = " Edible Rocks ";
+            return Fud;
+        case 17:
+            Fud = " Edible Bricks ";
+            return Fud;
+    }
+}
+
+function findUtility() {
+    ra = Math.floor(Math.random()*10)+1
+    switch(ra){
+        case 1:
+            u = " Lockpick(s) ";
+            return u;
+        case 2:
+            u = " Crowbar ";
+            return u;
+        case 3:
+            u = " Frying Pan ";
+            return u;
+        case 4:
+            u = " Firestarting Kit ";
+            return u;
+        case 5:
+            u = " Tent ";
+            return u;
+        case 6:
+            u = " Pot ";
+            return u;
+        case 7:
+            u = " Swordsmanship Manual ";
+            return u;
+        case 8:
+            u = " Bucket ";
+            return u;
+        case 9:
+            u = " Hammer ";
+            return u;
+        case 10:
+            u = " Wrench ";
+            return u;
     }
 }
