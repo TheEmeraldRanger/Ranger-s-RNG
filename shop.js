@@ -574,8 +574,8 @@ function findUtility() {
 }
 
 function randoEquip(){
-    r = findWAdj() + nameMaterial() + chooseEquip()
-    return r
+    var randoEquip = findWAbj() + nameMaterial() + chooseEquip()
+    return randoEquip
 }
 
 function randoSupply(){
