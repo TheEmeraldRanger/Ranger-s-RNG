@@ -768,6 +768,39 @@ function findSkillz() {
         case 90:
             S = "being useless";
             return S;
+        case 91:
+            S = "being a joke";
+            return S;
+        case 92:
+            S = "getting targeted too often";
+            return S;
+        case 93:
+            S = "being a hero";
+            return S;
+        case 94:
+            S = "being a villain";
+            return S;
+        case 95:
+            S = "idk (how would I know *shrugs*)";
+            return S;
+        case 96:
+            S = "history";
+            return S;
+        case 97:
+            S = "#noregrets";
+            return S;
+        case 98:
+            S = "social media";
+            return S;
+        case 99:
+            S = "getting a divorce";
+            return S;
+        case 100:
+            S = "obtaining intel";
+            return S;
+        case 101:
+            S = "stuff...";
+            return S;
         }  
 }
 
