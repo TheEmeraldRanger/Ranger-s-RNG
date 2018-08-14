@@ -1,4 +1,4 @@
-var shop = document.getElementById("shopGen")
+var randomshop = document.getElementById("shopGen")
 var genshop = document.getElementById("genshopGen")
 
 var sresult = document.getElementById("shopresult")
