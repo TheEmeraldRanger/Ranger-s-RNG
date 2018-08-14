@@ -7,7 +7,7 @@ randomshop.onclick = function() {
     sresult.textContent = "The shop currently has the following in stock: " + randoEquip() + ", " + randoSupply() + ", " + randoItem() + ", " + randoItem() + "."
 }
 genshop.onclick = function() {
-    sresult.textContent = "The shop currently has... *WIP*"
+    sresult.textContent = "The shop currently has " + randoSupply() + ", " + randoSupply() + ", " + randoSupply() + ", " + randoSupply() + ", " + randoSupply + "."
 }
 
 function chooseEquip(){
