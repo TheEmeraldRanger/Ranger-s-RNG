@@ -10,29 +10,6 @@ genshop.onclick = function() {
     sresult.textContent = "The shop currently has... *WIP*"
 }
 
-function randoEquip(){
-    r = findWAdj() + nameMaterial() + chooseEquip()
-    return r
-}
-
-function randoSupply(){
-    randonum = Math.floor(Math.random()*100)+1
-    r = randonum + findfood()
-    return r
-}
-
-function randoItem(){
-    random = Math.floor(Math.random()*2)+1
-    switch(random){
-        case 1:
-            c = randoEquip();
-            return c;
-        case 2:
-            c = randoSupply();
-            return c;
-    }
-}
-
 function chooseEquip(){
     var rmelee = Math.floor(Math.random() * 18)+1
     var rranged = Math.floor(Math.random() * 50)+1
@@ -593,5 +570,28 @@ function findUtility() {
         case 12:
             u = " Defusal Kit ";
             return u;
+    }
+}
+
+function randoEquip(){
+    r = findWAdj() + nameMaterial() + chooseEquip()
+    return r
+}
+
+function randoSupply(){
+    randonum = Math.floor(Math.random()*100)+1
+    r = randonum + findfood()
+    return r
+}
+
+function randoItem(){
+    random = Math.floor(Math.random()*2)+1
+    switch(random){
+        case 1:
+            c = randoEquip();
+            return c;
+        case 2:
+            c = randoSupply();
+            return c;
     }
 }
