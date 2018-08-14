@@ -6,7 +6,7 @@ var sresult = document.getElementById("shopresult")
 randomshop.onclick = function() {
     sresult.textContent = "The shop currently has the following in stock: " + randoEquip() + ", " + randoSupply() + ", " + randoItem() + ", " + randoItem() + "."
 }
-genshop.onclick = function(){
+genshop.onclick = function() {
     sresult.textContent = "The shop currently has... *WIP*"
 }
 
@@ -105,38 +105,62 @@ function chooseEquip(){
                 case 2:
                 case 3:
                 case 4:
-                    i = " pistol "
+                    i = " Flintlock Pistol "
                     return i
                 case 5:
-                    i = " prototype pistol "
+                    i = " Prototype Pistol "
                     return i
                 case 6:
-                    i = " repeating pistol "
+                    i = " Repeating Pistol "
                     return i
                 case 7:
                 case 8:
                 case 9:
-                    i = " rifle "
+                    i = " Flintlock Rifle "
                     return i
                 case 10:
-                    i = " lever-action "
+                    i = " Lever-Action "
                     return i
                 case 11:
-                    i = " bolt-action "
+                    i = " Bolt-Action "
                     return i
                 case 12:
                 case 13:
                 case 14:
-                    i = " blunderbuss "
+                    i = " Blunderbuss "
                     return i
                 case 15:
-                    i = " double-barrel "
+                    i = " Double-Barrel "
                     return i
                 case 16:
                 case 17:
                 case 18:
-                    i = " bow "
-                    return i
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                    i = " Shortbow ";
+                    return i;
+                case 25:
+                case 26:
+                case 27:
+                case 28:
+                    i = " Blowpipe ";
+                    return i;
+                case 29:
+                case 30:
+                case 31:
+                case 32:
+                    i = " Longbow ";
+                    return i;
+                case 33:
+                case 34:
+                case 35:
+                case 36:
+                    i = " Recurve Bow ";
+                    return i;
             }
         case 3:
             //Magic Weapons
