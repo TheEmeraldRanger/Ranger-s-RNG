@@ -35,7 +35,7 @@ function randoItem(){
 
 function chooseEquip(){
     var rmelee = Math.floor(Math.random() * 18)+1
-    var rranged = Math.floor(Math.random() * 18)+1
+    var rranged = Math.floor(Math.random() * 36)+1
     var rmagic = Math.floor(Math.random() * 18)+1
     var rarmor = Math.floor(Math.random() * 18)+1
     var ritemclass = Math.floor(Math.random()*4)+1
